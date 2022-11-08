@@ -546,7 +546,6 @@ void keyboard(unsigned char key, int x, int y)
     else if (obj_type == STRING) { // 輸入文字
         if ((int)(key) == ENTER || str_pos_x[version] + STR_WIDTH > width) string_endl();
         else if ((int)(key) == DELETE) {
-            init_window();
             load(LOAD_GO_BACK);
         }
         else {
